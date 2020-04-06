@@ -1,0 +1,56 @@
+/*
+* Copyright (C) 2020 Raphael Schneider
+* This file is part of the FEITS NewGRF for OpenTTD
+* This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+* You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* Basic template for 8 vehicle views */
+template template_vehicle_basic(x, y) {
+    // arguments x, y: coordinates of top-left corner of first sprite
+    [x,       y,  8, 26,  -3, -12] //xpos ypos xsize ysize xoff yoff
+    [x +  9,  y, 22, 20, -15, -12]
+    [x + 32,  y, 32, 13, -16,  -9]
+    [x + 65,  y, 22, 20,  -7, -12]
+    [x + 88,  y,  8, 26,  -3, -12]
+    [x + 97,  y, 22, 20, -15, -12]
+    [x + 120, y, 32, 13, -16,  -9]
+    [x + 153, y, 22, 20,  -7, -12]
+}
+
+/* Basic template for 8 vehicle views for electric veh */
+template template_vehicle_basic_e(x, y) {
+    // arguments x, y: coordinates of top-left corner of first sprite
+    [x,       y,  8, 26,  -3, -12] //xpos ypos xsize ysize xoff yoff
+    [x +  9,  y, 22, 20, -15, -12]
+    [x + 32,  y, 32, 15, -16, -11]
+    [x + 65,  y, 22, 20,  -7, -12]
+    [x + 88,  y,  8, 26,  -3, -12]
+    [x + 97,  y, 22, 20, -15, -12]
+    [x + 120, y, 32, 15, -16, -11]
+    [x + 153, y, 22, 20,  -7, -12]
+}
+
+/* Basic template for 8 vehicle views for electric veh */
+template template_vehicle_basic_s(x, y) {
+    // arguments x, y: coordinates of top-left corner of first sprite
+    [x,        y + 7,  8, 19,  -3, -11] //xpos ypos xsize ysize xoff yoff
+    [x +   9,  y + 4, 16, 16,  -9,  -9]
+    [x +  32,  y    , 19, 15,  -5,  -9]
+    [x +  65,  y    , 16, 16,   0,  -8]
+    [x +  88,  y    ,  8, 19,  -3,  -4]
+    [x + 103,  y    , 16, 16, -16,  -7]
+    [x + 133,  y    , 19, 15, -16,  -9]
+    [x + 159,  y + 4, 16, 16,  -7, -11]
+}
+
+/* Template for purchase window */
+template template_purchase(x, y) {
+    [x, y, 60, 12, -31, -7]
+}
+
+/* Template for purchase window electric */
+template template_purchase_e(x, y) {
+    [x, y, 60, 15, -31, -9]
+}

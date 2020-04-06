@@ -1,0 +1,5 @@
+FEITS.src.dep:  /usr/include/stdc-predef.h src/header.pnml \
+ src/railtypetable.pnml src/templates.pnml src/diesel/velth325_g.pnml \
+ src/diesel/velth325_i.pnml src/diesel/hoischer636_i.pnml \
+ src/diesel/hoischer636_g.pnml src/electric/velth422e_g.pnml \
+ src/electric/velth422e_i.pnml

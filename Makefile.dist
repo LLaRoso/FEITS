@@ -1,0 +1,12 @@
+################################################################
+# Definitions needed for tar releases
+# This part is automatically generated
+################################################################
+REPO_REVISION := -1
+REPO_BRANCH := 
+REPO_MODIFIED := 
+REPO_TAGS    := 
+HG := :
+DIST_DIRS := 
+DEP_CHECK_TYPE := normal
+FROM_TAR := 1

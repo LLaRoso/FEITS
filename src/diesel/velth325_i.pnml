@@ -1,0 +1,44 @@
+/*
+* Copyright (C) 2020 Raphael Schneider
+* This file is part of the FEITS NewGRF for OpenTTD
+* This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+* You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
+
+item(FEAT_TRAINS, item_velth325) {
+    property {
+        name:                           string(str_velth325_name);
+		introduction_date:				date(1995,01,01);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        retire_early:                   0;
+		vehicle_life:					30;
+		reliability_decay:				20;
+        speed:                          99 km/h;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+		//refittable_cargo_classes:     	bitmask(CC_PASSENGERS);
+        //cargo_capacity:                 60;
+        tractive_effort_coefficient:    0.5;
+        air_drag_coefficient:           0;
+		//loading_speed:					9;
+		cost_factor:					50;
+		running_cost_factor:			200;
+		dual_headed:					0;
+        //length:                         8;
+		power:							5600 hp;
+        weight:                         140 ton;
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        climates_available:             ALL_CLIMATES;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        track_type:                     DUAL;
+    }
+    
+    graphics {
+        purchase:           set_purchase_velth325;
+        default:            switch_velth325_graphic;
+        additional_text:    string(str_eng_additional_text_d, string(str_at_us_hf), string(str_at_dc_ddl));
+        power:              switch_velth325_power;
+        articulated_part:   switch_velth325_artic;
+    }
+}

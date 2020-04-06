@@ -1,0 +1,19 @@
+##grflangid 0x01
+##plural 0
+
+STR_GRF_NAME                                                    :FEITS Fictional European Inspired Train Set  
+STR_GRF_DESCRIPTION                                             :{SILVER}A Set of trains inspired by existing trains in Europe.{}{}{BLACK}(C) 2020 Raphael Schneider
+
+str_velth325_name                                               :Velth 325 (Diesel)
+str_velth422e_name                                              :Velth 422E (Electric)
+str_hoischer636_name                                            :Hoischer 636 (Diesel)
+
+str_eng_additional_text                                         :{BLACK}Usage: {GOLD}{STRING}
+str_eng_additional_text_d                                       :{BLACK}Usage: {GOLD}{STRING}{}{}{SILVER}{STRING}
+
+str_at_us_hf                                                    :Heavy Freight
+str_at_us_f                                                     :Freight
+str_at_us_s                                                     :Shunting/Light Freight
+str_at_us_hsp                                                   :Highspeed Passenger
+
+str_at_dc_ddl                                                   :Diesel Double Locomotive

@@ -1,0 +1,42 @@
+/*
+* Copyright (C) 2020 Raphael Schneider
+* This file is part of the FEITS NewGRF for OpenTTD
+* This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+* You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
+
+item(FEAT_TRAINS, item_velth422e) {
+    property {
+        name:                           string(str_velth422e_name);
+		introduction_date:				date(1997,01,01);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        retire_early:                   0;
+		vehicle_life:					30;
+		reliability_decay:				20;
+        speed:                          200 km/h;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+		refittable_cargo_classes:     	bitmask(CC_PASSENGERS);
+        //cargo_capacity:                 60;
+        tractive_effort_coefficient:    0.6;
+        air_drag_coefficient:           0;
+		//loading_speed:					9;
+		cost_factor:					30;
+		running_cost_factor:			100;
+		dual_headed:					0;
+        //length:                         8;
+		power:							2000 hp;
+        weight:                         74 ton;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC);
+        climates_available:             ALL_CLIMATES;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        track_type:                     ELRL;
+    }
+    
+    graphics {
+        purchase:           set_purchase_velth422e;
+        default:            set_velth422e;
+        additional_text:    string(str_eng_additional_text, string(str_at_us_hsp));
+    }
+}
