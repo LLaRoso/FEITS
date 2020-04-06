@@ -1,3 +1,0 @@
-
-gfx/terrain.scm: gfx/png_source_list
-gfx/terrain.png: gfx/test.xcf

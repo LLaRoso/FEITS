@@ -1,3 +1,0 @@
-VERSION  :r-1
-TITLE    :FEITS r-1
-FILENAME :FEITS.grf
