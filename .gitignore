@@ -2,3 +2,4 @@ makefile-changelog.txt
 makefile-license.txt
 makefile-readme.ptxt
 .nmlcache/*
+/gfx/test.xcf
