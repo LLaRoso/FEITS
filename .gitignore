@@ -3,3 +3,4 @@ makefile-license.txt
 makefile-readme.ptxt
 .nmlcache/*
 /gfx/*.xcf
+/gfx/*.scm
