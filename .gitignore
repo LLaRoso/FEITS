@@ -4,3 +4,4 @@ makefile-readme.ptxt
 .nmlcache/*
 /gfx/*.xcf
 /gfx/*.scm
+/gfx/png_source_list
