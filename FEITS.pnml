@@ -15,8 +15,10 @@
 
 #include "src/diesel/velth325_g.pnml"
 #include "src/diesel/velth325_i.pnml"
-#include "src/diesel/hoischer636_i.pnml"
 #include "src/diesel/hoischer636_g.pnml"
+#include "src/diesel/hoischer636_i.pnml"
 
 #include "src/electric/velth422e_g.pnml"
 #include "src/electric/velth422e_i.pnml"
+#include "src/electric/voctrenacdm_g.pnml"
+#include "src/electric/voctrenacdm_i.pnml"

@@ -6,16 +6,21 @@
 * You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-spriteset (set_purchase_velth325,   "gfx/velth325.png") { template_purchase(32, 54) }
-spriteset (set_front_velth325,      "gfx/velth325.png") { template_vehicle_basic(0, 0) }
-spriteset (set_rear_velth325,       "gfx/velth325.png") { template_vehicle_basic(0, 27) }
+spriteset (set_purchase_voctrenacdm,   "gfx/voctrenacdm.png") { template_purchase_e(32, 54) }
+spriteset (set_front_voctrenacdm,      "gfx/voctrenacdm.png") { template_vehicle_basic_e(0, 0) }
+spriteset (set_rear_voctrenacdm,       "gfx/voctrenacdm.png") { template_vehicle_basic_e(0, 27) }
 
-switch (FEAT_TRAINS, SELF, switch_velth325_graphic, (position_in_vehid_chain % 2)) {
-    0: return set_front_velth325;
-    return set_rear_velth325;
+switch (FEAT_TRAINS, SELF, switch_voctrenacdm_graphic, (position_in_vehid_chain % 2)) {
+    0: return set_front_voctrenacdm;
+    return set_rear_voctrenacdm;
 }
 
-switch (FEAT_TRAINS, SELF, switch_velth325_artic, extra_callback_info1) {
-    1: return item_velth325;
+switch (FEAT_TRAINS, SELF, switch_voctrenacdm_artic, extra_callback_info1) {
+    1: return item_voctrenacdm;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_voctrenacdm_power, current_railtype) {
+    ELRL: return 8400;
+    return 2000;
 }

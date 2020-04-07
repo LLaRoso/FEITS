@@ -31,14 +31,13 @@ item(FEAT_TRAINS, item_velth325) {
         climates_available:             ALL_CLIMATES;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         running_cost_base:              RUNNING_COST_DIESEL;
-        track_type:                     DUAL;
+        track_type:                     RAIL;
     }
     
     graphics {
         purchase:           set_purchase_velth325;
         default:            switch_velth325_graphic;
         additional_text:    string(str_eng_additional_text_d, string(str_at_us_hf), string(str_at_dc_ddl));
-        power:              switch_velth325_power;
         articulated_part:   switch_velth325_artic;
     }
 }

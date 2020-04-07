@@ -24,11 +24,11 @@ template template_vehicle_basic_e(x, y) {
     // arguments x, y: coordinates of top-left corner of first sprite
     [x,       y,  8, 26,  -3, -12] //xpos ypos xsize ysize xoff yoff
     [x +  9,  y, 22, 20, -15, -12]
-    [x + 32,  y, 32, 15, -16, -11]
+    [x + 32,  y, 32, 15, -17, -11]
     [x + 65,  y, 22, 20,  -7, -12]
     [x + 88,  y,  8, 26,  -3, -12]
     [x + 97,  y, 22, 20, -15, -12]
-    [x + 120, y, 32, 15, -16, -11]
+    [x + 120, y, 32, 15, -17, -11]
     [x + 153, y, 22, 20,  -7, -12]
 }
 

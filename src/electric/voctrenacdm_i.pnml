@@ -6,37 +6,39 @@
 * You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-item(FEAT_TRAINS, item_hoischer636) {
+item(FEAT_TRAINS, item_voctrenacdm) {
     property {
-        name:                           string(str_hoischer636_name);
-		introduction_date:				date(1960,01,01);
+        name:                           string(str_voctrenacdm_name);
+		introduction_date:				date(2019,01,01);
         model_life:                     VEHICLE_NEVER_EXPIRES;
         retire_early:                   0;
 		vehicle_life:					30;
 		reliability_decay:				20;
-        speed:                          59 km/h;
-        engine_class:                   ENGINE_CLASS_DIESEL;
+        speed:                          160 km/h;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
 		//refittable_cargo_classes:     	bitmask(CC_PASSENGERS);
         //cargo_capacity:                 60;
-        tractive_effort_coefficient:    0.5;
+        tractive_effort_coefficient:    0.6;
         air_drag_coefficient:           0;
 		//loading_speed:					9;
-		cost_factor:					20;
-		running_cost_factor:			80;
+		cost_factor:					80;
+		running_cost_factor:			240;
 		dual_headed:					0;
-        length:                         4.7;
-		power:							700 hp;
-        weight:                         51 ton;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC);
+        //length:                         8;
+		power:							17000 hp;
+        weight:                         163 ton;
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         climates_available:             ALL_CLIMATES;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        running_cost_base:              RUNNING_COST_DIESEL;
-        track_type:                     RAIL;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        track_type:                     DUAL;
     }
     
     graphics {
-        purchase:           set_purchase_hoischer636;
-        default:            set_hoischer636;
-        additional_text:    string(str_eng_additional_text, string(str_at_us_s));
+        purchase:           set_purchase_voctrenacdm;
+        default:            switch_voctrenacdm_graphic;
+        additional_text:    string(str_eng_additional_text_d, string(str_at_us_hf), string(str_at_dc_msdl));
+        power:              switch_voctrenacdm_power;
+        articulated_part:   switch_voctrenacdm_artic;
     }
 }

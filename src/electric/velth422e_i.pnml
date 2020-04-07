@@ -14,7 +14,7 @@ item(FEAT_TRAINS, item_velth422e) {
         retire_early:                   0;
 		vehicle_life:					30;
 		reliability_decay:				20;
-        speed:                          200 km/h;
+        speed:                          199 km/h;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
 		refittable_cargo_classes:     	bitmask(CC_PASSENGERS);
         //cargo_capacity:                 60;
