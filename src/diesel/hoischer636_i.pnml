@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_hoischer636) {
         climates_available:             ALL_CLIMATES;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         running_cost_base:              RUNNING_COST_DIESEL;
-        track_type:                     RAIL;
+        track_type:                     Diesel;
     }
     
     graphics {

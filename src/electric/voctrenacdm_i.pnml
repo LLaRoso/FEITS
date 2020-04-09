@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_voctrenacdm) {
         climates_available:             ALL_CLIMATES;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        track_type:                     DUAL;
+        track_type:                     Dual;
     }
     
     graphics {

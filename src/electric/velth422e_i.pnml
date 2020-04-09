@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_velth422e) {
         climates_available:             ALL_CLIMATES;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        track_type:                     ELRL;
+        track_type:                     Electric;
     }
     
     graphics {
