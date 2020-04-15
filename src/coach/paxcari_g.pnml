@@ -6,11 +6,11 @@
 * You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-// define the newgrf
-grf {
-	grfid: "LL\01\00";
-	name: string(STR_GRF_NAME);
-	desc: string(STR_GRF_DESCRIPTION);
-	version: 0;
-	min_compatible_version: 0;
+spriteset (set_purchase_paxcari,   "gfx/paxcari.png") { template_purchase_e(0, 54) }
+spriteset (set_paxcari_m,          "gfx/paxcari.png") { template_vehicle_basic_sym(0, 27) }
+spriteset (set_paxcari_e,          "gfx/paxcari.png") { template_vehicle_basic_sym(0, 0) }
+
+switch (FEAT_TRAINS, SELF, switch_paxcari_g, position_in_consist_from_end) {
+    0: set_paxcari_e;
+    set_paxcari_m;
 }

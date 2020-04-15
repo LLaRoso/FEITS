@@ -6,11 +6,8 @@
 * You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-// define the newgrf
-grf {
-	grfid: "LL\01\00";
-	name: string(STR_GRF_NAME);
-	desc: string(STR_GRF_DESCRIPTION);
-	version: 0;
-	min_compatible_version: 0;
+//cargo translation table
+
+cargotable {
+    PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, AORE, BEAN, BEER, BDMT, BOOM, BRCK, CBLK, CERA, CERE, CLAY, CMNT, COPR, CSTI, CTAR, DYES, ENSP, FECR, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, KAOL, LIME, MILK, NITR, OLSD, PEAT, PETR, PHOS, PLAS, PORE, POTA, RFPR, SAND, SCMT, SULP, TOUR, TYRE, URAN, VEHI, WDPR, WOOL, ZINC, ACID, CASS, CHLO, COKE, EOIL, IRON, METL, MNO2, MNSP, NUTS, PIPE, POWR, QLME, RCYC, SALT, SASH, SGBT, SGCN, SLAG, STAL, STCB, STST, VBOD, VENG, VPTS, BATT, BUBL, COLA, CTCD, FZDR, PLST, SWET, TOFF, TOYS, YETI, YETY
 }

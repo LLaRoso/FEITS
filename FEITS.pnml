@@ -8,9 +8,12 @@
 
 // List of source files included from main file
 #include "src/header.pnml"
+#include "src/templates.pnml"
+#include "src/cargotable.pnml"
+#include "src/cargorefits.pnml"
 #include "src/railtypetable.pnml"
 
-#include "src/templates.pnml"
+
 
 
 #include "src/diesel/velth325_g.pnml"
@@ -22,3 +25,9 @@
 #include "src/electric/velth422e_i.pnml"
 #include "src/electric/voctrenacdm_g.pnml"
 #include "src/electric/voctrenacdm_i.pnml"
+
+#include "src/coach/paxcari_g.pnml"
+#include "src/coach/paxcari_i.pnml"
+
+#include "src/wagon/containerflatcar_g.pnml"
+#include "src/wagon/containerflatcar_i.pnml"

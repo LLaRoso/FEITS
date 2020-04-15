@@ -1,0 +1,74 @@
+/*
+* Copyright (C) 2020 Raphael Schneider
+* This file is part of the FEITS NewGRF for OpenTTD
+* This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+* You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
+
+spriteset (set_purchase_containerflatcar,   "gfx/containerflatcar.png") { template_purchase_e(89, 0) }
+spriteset (set_empty_containerflatcar,      "gfx/containerflatcar.png") { tmpl_sym(0, 0) }
+spriteset (set_empty2_containerflatcar,     "gfx/containerflatcar.png") { tmpl_sym(352, 0) }
+spriteset (set_loading1_containerflatcar,   "gfx/containerflatcar.png") { tmpl(0, 25) }
+spriteset (set_loaded1_containerflatcar,    "gfx/containerflatcar.png") { tmpl(0, 50) }
+spriteset (set_loaded2_containerflatcar,    "gfx/containerflatcar.png") { tmpl(0, 75) }
+spriteset (set_loading3_containerflatcar,   "gfx/containerflatcar.png") { tmpl(176, 25) }
+spriteset (set_loaded3_containerflatcar,    "gfx/containerflatcar.png") { tmpl(176, 50) }
+spriteset (set_loaded4_containerflatcar,    "gfx/containerflatcar.png") { tmpl(176, 75) }
+spriteset (set_loading5_containerflatcar,   "gfx/containerflatcar.png") { tmpl(352, 25) }
+spriteset (set_loaded5_containerflatcar,    "gfx/containerflatcar.png") { tmpl(352, 50) }
+spriteset (set_loaded6_containerflatcar,    "gfx/containerflatcar.png") { tmpl(352, 75) }
+spriteset (set_loading7_containerflatcar,   "gfx/containerflatcar.png") { tmpl(528, 25) }
+spriteset (set_loaded7_containerflatcar,    "gfx/containerflatcar.png") { tmpl(528, 50) }
+spriteset (set_loaded8_containerflatcar,    "gfx/containerflatcar.png") { tmpl(528, 75) }
+
+spritegroup group_loading1_containerflatcar {
+    loading:    [set_empty_containerflatcar, set_loading1_containerflatcar, set_loaded1_containerflatcar];
+    loaded:     [set_empty_containerflatcar, set_loading1_containerflatcar, set_loaded1_containerflatcar];
+}
+
+spritegroup group_loading2_containerflatcar {
+    loading:    [set_empty_containerflatcar, set_loaded2_containerflatcar];
+    loaded:     [set_empty_containerflatcar, set_loaded2_containerflatcar];
+}
+
+spritegroup group_loading3_containerflatcar {
+    loading:    [set_empty_containerflatcar, set_loading3_containerflatcar, set_loaded3_containerflatcar];
+    loaded:     [set_empty_containerflatcar, set_loading3_containerflatcar, set_loaded3_containerflatcar];
+}
+
+spritegroup group_loading4_containerflatcar {
+    loading:    [set_empty_containerflatcar, set_loaded4_containerflatcar];
+    loaded:     [set_empty_containerflatcar, set_loaded4_containerflatcar];
+}
+
+spritegroup group_loading5_containerflatcar {
+    loading:    [set_empty2_containerflatcar, set_loading5_containerflatcar, set_loaded5_containerflatcar];
+    loaded:     [set_empty2_containerflatcar, set_loading5_containerflatcar, set_loaded5_containerflatcar];
+}
+
+spritegroup group_loading6_containerflatcar {
+    loading:    [set_empty2_containerflatcar, set_loaded6_containerflatcar];
+    loaded:     [set_empty2_containerflatcar, set_loaded6_containerflatcar];
+}
+
+spritegroup group_loading7_containerflatcar {
+    loading:    [set_empty2_containerflatcar, set_loading7_containerflatcar, set_loaded7_containerflatcar];
+    loaded:     [set_empty2_containerflatcar, set_loading7_containerflatcar, set_loaded7_containerflatcar];
+}
+
+spritegroup group_loading8_containerflatcar {
+    loading:    [set_empty2_containerflatcar, set_loaded8_containerflatcar];
+    loaded:     [set_empty2_containerflatcar, set_loaded8_containerflatcar];
+}
+
+random_switch (FEAT_TRAINS, SELF, switch_containerflatcar_g, bitmask(TRIGGER_VEHICLE_NEW_LOAD)) {
+    1:          group_loading1_containerflatcar;
+    1:          group_loading2_containerflatcar;
+    1:          group_loading3_containerflatcar;
+    1:          group_loading4_containerflatcar;
+    1:          group_loading5_containerflatcar;
+    1:          group_loading6_containerflatcar;
+    1:          group_loading7_containerflatcar;
+    1:          group_loading8_containerflatcar;
+}

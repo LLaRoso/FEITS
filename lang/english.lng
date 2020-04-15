@@ -9,13 +9,23 @@ str_velth422e_name                                              :Velth 422E (Ele
 str_voctrenacdm_name                                            :Voctren ACDM (Electric/Diesel)
 str_hoischer636_name                                            :Hoischer 636 (Diesel)
 
+str_paxcari_name                                                :'60 Passenger Car
+
+str_containerflatcar_name                                       :Container Flatcar
+
 str_eng_additional_text                                         :{BLACK}Usage: {GOLD}{STRING}
 str_eng_additional_text_d                                       :{BLACK}Usage: {GOLD}{STRING}{}{}{SILVER}{STRING}
+str_eng_additional_text_od                                      :{}{}{SILVER}{STRING}
 
 str_at_us_hf                                                    :Heavy Freight
 str_at_us_f                                                     :Freight
 str_at_us_s                                                     :Shunting/Light Freight
 str_at_us_hsp                                                   :Highspeed Passenger
+str_at_us_medp                                                  :Medium Speed Passenger
+
 
 str_at_dc_ddl                                                   :Diesel Double Locomotive
 str_at_dc_msdl                                                  :Multisystem Double Locomotive
+
+str_at_dc_stpc                                                  :Standard Passenger Car
+str_at_dc_cfc                                                   :Container Flatcar

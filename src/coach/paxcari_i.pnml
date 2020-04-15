@@ -1,0 +1,43 @@
+/*
+* Copyright (C) 2020 Raphael Schneider
+* This file is part of the FEITS NewGRF for OpenTTD
+* This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+* You should have received a copy of the GNU General Public License along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
+
+item(FEAT_TRAINS, item_paxcari) {
+    property {
+        name:                           string(str_paxcari_name);
+		introduction_date:				date(1960,01,01);
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        retire_early:                   0;
+		vehicle_life:					30;
+		reliability_decay:				20;
+        speed:                          200 km/h;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+		CARGODEF_PASSENGERS
+        cargo_capacity:                 60;
+        tractive_effort_coefficient:    0;
+        air_drag_coefficient:           0;
+		loading_speed:					6;
+		cost_factor:					100;
+		running_cost_factor:			0;
+		dual_headed:					0;
+        length:                         8;
+		power:							0;
+        weight:                         40 ton;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC);
+        climates_available:             ALL_CLIMATES;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        track_type:                     Diesel;
+		ai_special_flag:                AI_FLAG_PASSENGER;
+    }
+    
+    graphics {
+        purchase:           set_purchase_paxcari;
+        additional_text:    string(str_eng_additional_text_d, string(str_at_us_medp), string(str_at_dc_stpc));
+        switch_paxcari_g;
+    }
+}
